@@ -2,8 +2,6 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
 
-        pkg: grunt.file.readJSON('package.json'),
-
         concat: {
             options: {
                 separator: grunt.util.linefeed
@@ -16,7 +14,7 @@ module.exports = function(grunt) {
                       'src/optional/*.js',
                       'src/banners/outro.js'],
 
-                dest: 'dist/<%= pkg.name %>.js'
+                dest: 'dist/fuzzy-search.js'
             }
         },
 
@@ -35,7 +33,7 @@ module.exports = function(grunt) {
 
             dist: {
                 files: {
-                    'dist/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
+                    'dist/fuzzy-search.min.js': ['<%= concat.dist.dest %>']
                 }
             }
 

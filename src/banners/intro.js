@@ -9,3 +9,5 @@
  */
 
 (function () { 'use strict';
+
+var _performance = typeof window !== 'undefined' ? window.performance : null;

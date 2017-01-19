@@ -12,7 +12,7 @@ extend(FuzzySearch.prototype, /** @lends {FuzzySearch.prototype} */ {
      */
     search: function (query_string) {
 
-        var clock = (window.performance && window.performance.now) ? window.performance : Date;
+        var clock = (_performance && _performance.now) ? _performance : Date;
         var time_start = clock.now();
         this.start_time = time_start;
         var options = this.options;

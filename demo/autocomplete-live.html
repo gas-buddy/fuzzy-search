@@ -11,8 +11,8 @@
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.jquery.min.js"></script>
 
-    <!--script src="../dist/FuzzySearch.min.js"></script-->
-    <script src="../dist/FuzzySearch.js"></script>
+    <!--script src="../dist/fuzzy-search.min.js"></script-->
+    <script src="../dist/fuzzy-search.js"></script>
 
 
 </head>
@@ -135,7 +135,7 @@
     //
     // Use footer to show some performance stats
     //
-    var clock = (window.performance && window.performance.now) ? window.performance : Date;
+    var clock = (_performance && _performance.now) ? _performance : Date;
 
     function footerTemplate() {
         var render_end = clock.now();
